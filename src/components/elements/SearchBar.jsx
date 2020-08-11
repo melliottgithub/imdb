@@ -8,14 +8,14 @@ import {
 } from "../styles/StyledSearchBar";
 
 const SearchBar = ({ callback }) => {
-  const [state, setstate] = useState("");
+  const [state, setState] = useState("");
   const timeOut = useRef(null);
 
   const doSearch = (event) => {
     const { value } = event.target;
 
     clearTimeout(timeOut.current);
-    setstate(value);
+    setState(value);
 
     timeOut.current = setTimeout(() => {
       callback(value);
@@ -32,7 +32,7 @@ const SearchBar = ({ callback }) => {
         ></FontAwesome>
         <input
           type="text"
-          placeholder="search Movie"
+          placeholder="Search Movie"
           onChange={doSearch}
           value={state}
         />
