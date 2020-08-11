@@ -19,7 +19,7 @@ const SearchBar = ({ callback }) => {
 
     timeOut.current = setTimeout(() => {
       callback(value);
-    }, 500);
+    }, 0);
   };
 
   return (
