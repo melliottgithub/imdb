@@ -19,7 +19,7 @@ import {
 //custom Hook
 import { useHomeFetch } from "./Hooks/useHomeFetch";
 
-import {} from "./images/no_image.jpg";
+import NoImage from "./images/no_image.jpg";
 
 const Home = () => {
   const [
@@ -69,7 +69,7 @@ const Home = () => {
             image={
               movie.poster_path
                 ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
-                : null
+                : NoImage
             }
             movieId={movie.id}
             movieName={movie.original_title}

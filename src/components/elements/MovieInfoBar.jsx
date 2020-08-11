@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MovieInfoBar = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return <div>Movie Info Bar</div>;
+};
 
-export default MovieInfoBar
+export default MovieInfoBar;
